@@ -1,0 +1,213 @@
+body{
+
+    position: relative;
+    display: block;
+    font-family:Georgia, 'Times New Roman', Times, serif !important;
+
+
+}
+
+
+#vbg{
+    position:absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+.maincontainer{
+
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.calendar_container{
+
+    display: inline-grid !important;
+    grid-template-areas:
+
+    '. imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg .'
+    '. imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg .'
+    '. imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg .'
+    '. imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg imagebg .'
+    '. month month month month month month month month month year year year year year .'
+    '. month month month month month month month month month year year year year year .'
+    '. btn btn btn btn btn btn btn btn btn btn btn btn btn btn .'
+    '. btn btn btn btn btn btn btn btn btn btn btn btn btn btn .'
+    '. day1 day1 day2 day2 day3 day3 day4 day4 day5 day5 day6 day6 day7 day7 .'
+    '. day1 day1 day2 day2 day3 day3 day4 day4 day5 day5 day6 day6 day7 day7 .'
+    '. cell00 cell00 cell01 cell01 cell02 cell02 cell03 cell03 cell04 cell04 cell05 cell05 cell06 cell06 .'
+    '. cell00 cell00 cell01 cell01 cell02 cell02 cell03 cell03 cell04 cell04 cell05 cell05 cell06 cell06 .'
+    '. cell10 cell10 cell11 cell11 cell12 cell12 cell13 cell13 cell14 cell14 cell15 cell15 cell16 cell16 .'
+    '. cell10 cell10 cell11 cell11 cell12 cell12 cell13 cell13 cell14 cell14 cell15 cell15 cell16 cell16 .'
+    '. cell20 cell20 cell21 cell21 cell22 cell22 cell23 cell23 cell24 cell24 cell25 cell25 cell26 cell26 .'
+    '. cell20 cell20 cell21 cell21 cell22 cell22 cell23 cell23 cell24 cell24 cell25 cell25 cell26 cell26 .'
+    '. cell30 cell30 cell31 cell31 cell32 cell32 cell33 cell33 cell34 cell34 cell35 cell35 cell36 cell36 .'
+    '. cell30 cell30 cell31 cell31 cell32 cell32 cell33 cell33 cell34 cell34 cell35 cell35 cell36 cell36 .'
+    '. cell40 cell40 cell41 cell41 cell42 cell42 cell43 cell43 cell44 cell44 cell45 cell45 cell46 cell46 .'
+    '. cell40 cell40 cell41 cell41 cell42 cell42 cell43 cell43 cell44 cell44 cell45 cell45 cell46 cell46 .'
+    '. cell50 cell50 cell51 cell51 cell52 cell52 cell53 cell53 cell54 cell54 cell55 cell55 cell56 cell56 .'
+    '. cell50 cell50 cell51 cell51 cell52 cell52 cell53 cell53 cell54 cell54 cell55 cell55 cell56 cell56 .' !important;
+
+
+    position: relative;
+    width: 50% !important;
+    height: 100% !important;
+
+    gap: 100px;
+
+
+
+
+}
+
+
+#generate_btn{
+
+    background-color: orange;
+    border-color: orange;
+    border-radius: 5px;
+    color:white;
+    font-size: 2em;
+}
+
+.imagebg{
+
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+    grid-area: image !important;
+
+
+
+    box-sizing: border-box;
+
+
+    height: auto;
+
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+img{
+    
+    width: 20%;
+
+}
+
+
+.month{
+
+    position: relative;
+    display: inline-flex;
+    grid-area: month !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 40vw;
+
+}
+
+
+.year{
+
+    position: relative;
+    display: inline-flex;
+    grid-area: year !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    width: 10vw;
+
+}
+
+
+select{
+    position: relative;
+    font-size: 2.5em;
+
+    background-color: white;
+}
+
+
+.btn{
+
+    position: relative;
+    display: inline-flex;
+    grid-area: btn !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+  
+    
+
+    width: 50%;
+    height: 150%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+#generate_btn{
+
+    cursor:pointer;
+}
+
+table
+{
+
+    position: relative;
+    display: inline-flex;
+    grid-area: cell00 !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+
+    font-weight: bold;
+    
+    width: 100%;
+    height: 150%;
+
+    
+    background: rgba(210, 205, 113, 0.5);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+
+label{
+
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+
+
+
+    
+}
+
+
+
+
