@@ -241,6 +241,7 @@ function getTime() {
     
 
       drawCal(firstDay + 1, days, date, monthName, year)
+      
       }
    
       
@@ -365,17 +366,10 @@ function getTime() {
 
 
 
-      
-     
-
-
-
-
     }
 
 
-var getDate ;
-var getDay;
+
 
 function generate_date(){
 
@@ -397,10 +391,6 @@ function generate_date(){
 
 
     setCalendar(date, selectedyear , selectedmonth);
-
-
-
-
 
 
 }
